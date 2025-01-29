@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rowrrrrrrrrr</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .btn-success {
+            transition: all 0.3s ease;
+        }
+        .btn-success:hover {
+            background-color: #28a745;
+            transform: scale(1.1);
+        }
+        .dialog-box {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #profileImage {
+            display: none;
+            margin-top: 20px;
+            width: 100%;  /* Lebar 100% untuk kotak besar */
+            max-width: 600px;  /* Maksimal lebar gambar */
+            height: auto;
+            border: 5px solid #ddd;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Memberikan bayangan pada gambar */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minimal masuk google lah pad</h1>
+    </header>
+
+    <main class="container text-center">
+        <div class="dialog-box" id="dialogBox">
+            <h3><strong>ALFAT: </strong><span id="alfatQuestion">Ko siapa si pid, ko ada ngak di Google?</span></h3>
+            <h3><strong>HAFID: </strong><span id="hafidAnswer">...</span></h3>
+        </div>
+
+        <button class="btn btn-success mt-4" id="demoBtn">Tekan Ini Pad</button>
+        
+        <img id="profileImage" src="/assets/img/kloGuaMaluTuh.jpg" alt="Bukti Gambar">
+
+    </main>
+
+    <script>
+        // Menangani interaksi dengan tombol
+        document.getElementById("demoBtn").addEventListener("click", function() {
+            // Menampilkan alert sebagai bukti
+            alert("Ini bukti bahwa saya ada di Google!");
+
+            // Menampilkan jawaban dari Hafid setelah tombol diklik
+            document.getElementById("alfatQuestion").textContent = "Ko siapa si, ko ada ngak di Google?";
+            document.getElementById("hafidAnswer").textContent = "Adalah ini buktinya!";
+
+            // Menampilkan gambar sebagai 'bukti'
+            document.getElementById("profileImage").style.display = "block";
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
